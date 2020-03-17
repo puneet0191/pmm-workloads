@@ -66,7 +66,7 @@ echo("Schemas:  $schemas,  Tables: $tables,  Queries: $queries   Target Queries 
 
 
 
-$link=mysqli_connect($mysql_host,$mysql_user,$mysql_password);
+$link=mysqli_connect($mysql_host,$mysql_user,$mysql_password, $mysql_db, $mysql_port);
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
