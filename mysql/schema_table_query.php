@@ -56,6 +56,10 @@ if(getenv('MYSQL_USER'))
   $mysql_user=getenv('MYSQL_USER');
 if(getenv('MYSQL_PASSWORD'))
   $mysql_password=getenv('MYSQL_PASSWORD');
+if(getenv('MYSQL_PORT'))
+  $mysql_port=getenv('MYSQL_PORT');
+if(getenv('MYSQL_DATABASE'))
+  $mysql_db=getenv('MYSQL_DATABASE');
 
 
 echo("Schemas:  $schemas,  Tables: $tables,  Queries: $queries   Target Queries Per Second: $target_qps\n");
